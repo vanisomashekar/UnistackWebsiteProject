@@ -1,0 +1,48 @@
+agm-map{
+    height:400px;
+}
+
+#d{
+    background-color:gainsboro;
+    text-align: center; 
+}
+#toefl{
+    display:none;
+}
+#hello{
+    padding:20px;
+    border-radius: 25px;
+    background-color:rgb(87, 104, 134);
+    color:gainsboro;
+}
+#g{
+    margin-top:10px;
+    background-color:azure;
+    padding:15px;
+}
+#y{
+    padding:15px;
+    border-radius:10px;
+    text-align: center;
+    color:white;
+}
+#ielts{
+    display:none;
+  
+}
+#reg{
+    font-size:10px;
+}
+#button{
+    font-size:20px;
+}
+#tl{
+    
+    width:300px;
+}
+#n{
+   
+}
+.progress {margin-bottom:0;}
+.start {float:left;}
+.end {float:right; text-align:right;}

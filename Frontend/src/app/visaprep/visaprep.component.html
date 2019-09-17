@@ -1,0 +1,96 @@
+<div class="container-fluid" id="visaguide">
+    <br><br><br><br>
+    <div class="row">
+      <div class="col-md-12">
+  <h3 class="mb-5 font-weight-bold text-center">VISA GUIDE AND INTERVIEW TIPS</h3>
+  <hr>
+  </div>
+  
+  <div class="wrapper">
+  
+  <div class="row" id="rating">
+      <div class="col-md-4"></div>
+    <div class="col-md-4 text-center">
+     
+        <div class="item">
+          <button class="ratgbtn" (click)="like()"><span class="fa fa-thumbs-up"></span> Likes</button>   {{likes}} 
+        </div>
+        <div class="item">
+          <button class="ratgbtn" (click)="dislike()"><span class="fa fa-thumbs-down"></span> Dislikes</button>   {{dislikes}}
+        </div>   
+         
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  
+  <div class="row" id="usrow">
+  <div class="col-md-3"></div>
+  <div class="col-md-2">
+      
+    <img src="assets/Images/us.jpg" class="img-fluid img-thumbnail" alt="" width="80%" class="images">
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;<b>United States</b></span>
+  </div>
+  <div class="col-md-4">
+    <button class="visabtn" (click)="toggleusvisareq()"><a routerLink="usvisareq">Visa Requirements</a></button>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <button class="visabtn" (click)="toggleusinterview()"><a routerLink="usinterviewguide">Interview Guide</a></button>
+    
+  <div class="col-md-3"></div>
+    </div>
+    <div *ngIf="viewusreq">
+        <app-usvisareq></app-usvisareq>
+      </div>
+      <div *ngIf="viewusinterview">
+          <app-usinterviewguide></app-usinterviewguide>
+        </div>
+    </div>
+  
+  <hr>
+  <div class="row" id="canadarow">
+    <div class="col-md-3"></div>
+    <div class="col-md-2">
+       
+      <img src="assets/Images/canada.jpg" class="img-fluid img-thumbnail" alt="" width="80%" class="images">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Canada</b></span>
+    </div>
+    <div class="col-md-4">
+      <button class="visabtn" (click)="togglecanadavisareq()"><a routerLink="canadavisareq">Visa Requirements</a></button>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <button class="visabtn" (click)="togglecanadainterview()"><a routerLink="canadainterviewguide">Interview Guide</a></button>
+      
+    <div class="col-md-3"></div>
+    </div>
+    <div *ngIf="viewcanadareq">
+        <app-canadavisareq></app-canadavisareq>
+      </div>
+      <div *ngIf="viewcanadainterview">
+          <app-canadainterviewguide></app-canadainterviewguide>
+        </div>
+    </div>
+  <hr>
+    <div class="row" id="australiarow">
+      <div class="col-md-3"></div>
+      <div class="col-md-2">
+          
+        <img src="assets/Images/australia.jpg" class="img-fluid img-thumbnail" alt="" width="80%" height="63%" class="images">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Australia</b></span>
+      </div>
+      <div class="col-md-4">
+        <button class="visabtn" (click)="toggleaustraliavisareq()"><a routerLink="australiavisareq">Visa Requirements</a></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="visabtn" (click)="toggleaustraliainterview()"><a routerLink="australiainterviewguide">Interview Guide</a></button>
+      </div>
+      <div class="col-md-3"></div>
+      </div>
+  
+      <div *ngIf="viewaustraliareq">
+          <app-australiavisareq></app-australiavisareq>
+        </div>
+        
+        <div *ngIf="viewaustraliainterview">
+          <app-australiainterviewguide></app-australiainterviewguide>
+        </div>
+  
+    </div>
+  </div>
+  </div>
+  

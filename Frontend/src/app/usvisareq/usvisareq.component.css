@@ -1,0 +1,13 @@
+#reqinfo{
+    background-color: white;
+    /* height: 100px; */
+}
+.scrollable{
+    height: 400px;
+    overflow: scroll;
+}
+dt{
+    background-color: rgb(87, 104, 134);
+    color: white;
+    text-align: center;
+}

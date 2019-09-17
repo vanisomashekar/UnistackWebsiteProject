@@ -1,0 +1,229 @@
+{
+    "id": 1,
+    "name": "Verbal",
+    "description": "Verbal quizz (contains sentence equivalance,reading comprehension)",
+    "questions": [
+        {
+            "id": 1010,
+            "name": "All during the financial advisor’s presentation on investment options, Laura repeatedly tried, to no avail, to (i) _________ Donovan of his positive impression of the speaker’s motives.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "convince",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "disabuse",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": " convince",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1011,
+            "name": "Since he lacks the (i) _____________ to take on venerable public figures, the author, no matter how (ii) ____________ his social critiques",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "timorousness",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "contrition",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "temerity",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1012,
+            "name": "For an obscure poet to have penned such a refined, poignant sonnet is not at all (i) _____________. ",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "rare",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "puzzling",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "System.Web.GUI.Page",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "suspect",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1013,
+            "name": "Faulkner’s work during his most prolific period, the 1930s, approximates the buoyantly conservative tone of Southern Regionalism in general and also indirectly characterizes its __________ “progress.”",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "affinity for ",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "sanguineness regarding",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "skepticism of",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1014,
+            "name": "Exposure to sustained noise almost certainly impairs blood pressure regulation in human beings, but to the frustration of many patients, some researchers have obtained results that __________ the relationships.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "conflate ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "diminish",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "neutralize",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "ViewBag",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "buttress",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1015,
+            "name": " Should we really care for the greatest actors of the past could we have them before us? Should we find them too different from our accent of thought, of feeling, of speech, in a thousand minute particulars which are of the essence of all three? Dr. Doran's long and interesting records of the triumphs of Garrick, and other less familiar,but in their day hardly less astonishing, players, do not relieve one of the doubt. Garrick himself, as sometimes happens with people who have been the subject of much anecdote and other conversation.1. In the expression ?One hardly sees the wood for the trees?, the author apparently intends the word trees to be analogous to. ", 
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,                                   
+              "questionId": 1010,
+                    "name": "features of Doran?s language style ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": " details learned from oral sources ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "personality of a famous actor ",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "stage triumphs of an astonishing player",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+                           
+
+        
+               
+            
+        
+    ]
+}

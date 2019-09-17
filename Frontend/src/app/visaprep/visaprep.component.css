@@ -1,0 +1,58 @@
+#visaguide{
+   
+    background-color:rgb(211, 219, 231);
+}
+
+.images{
+    float:left;
+    margin: 0px 15px 15px 20px;
+}
+.wrapper{
+    background-image: linear-gradient(rgb(187, 196, 209), rgb(68, 119, 196));;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    width: 80%;
+    
+}
+#rating{
+    padding: 40px 20px 20px 20px;
+}
+#usrow{
+    padding: 40px 20px 20px 20px;
+}
+#canadarow{
+    padding: 20px 20px 20px 20px;
+}
+#australiarow{
+    padding: 20px 20px 40px 20px;
+}
+hr{
+    border-top: 1px solid rgb(87, 104, 134);
+}
+.visabtn{
+    background-color:  rgb(87, 104, 134);
+   
+}
+.visabtn:hover{
+    background-color:  transparent;
+   
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.item{
+    display: inline;
+    padding: 20px 20px 20px 20px;
+
+}
+.ratgbtn{
+    background-color:goldenrod;
+    border-radius: 5px;
+}
+.ratgbtn:hover{
+    background-color:  navajowhite;
+    
+}

@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#home">UNISTACK</a>
+  </div>
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">UNIVERSITIES</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item"  routerLink="topuniversities">TOP UNIVERSITIES</a>
+        <a class="dropdown-item" routerLink="universityreviews">UNIVERSITY REVIEWS</a>
+        <a class="dropdown-item" routerLink="applicationdeadline">APPLICATION DEADLINES</a>
+        <a class="dropdown-item" href="#">COURSE LIST</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">SERVICES</a>
+
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink="visaprep">VISA PREP</a>
+        <a class="dropdown-item" routerLink="/gre">GRE PREP</a>
+        <a class="dropdown-item" routerLink="/gmat">GMAT PREP</a>
+        <a class="dropdown-item" routerLink="predeparture">PRE-DEPARTURE CHECKLIST</a>
+      </div>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+    <li class="nav-item"><a class="nav-link" (click)="internalRoute('home','contact')">CONTACT</a></li>
+  </ul>
+  <ul class="navbar-nav" *ngIf="status1">
+      <li class="nav-item"><a class="nav-link" (click)="internalRoute('home','contact')">REGISTER</a></li>
+      <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#modalLoginForm" >LOGIN</a></li>
+  </ul>
+   <ul class="navbar-nav" *ngIf="Status">
+        <li class="nav-item"><a class="nav-link"  (click)="onLogout()">LOGOUT</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">{{userDetails.Name}}</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="userprofile">Profile</a>
+            <a class="dropdown-item" [routerLink]="['/accountsetting',userDetails.email]">Account settings</a>
+            
+          </div>
+        </li>
+  </ul>
+</nav>
+<app-login></app-login>

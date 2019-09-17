@@ -1,0 +1,229 @@
+<div class="container-fluid navbar-focus" style="margin-top:50px;">
+  <div class="row">
+    <div class="col-sm-12 university-header" style="height: 500px;"  [ngStyle]="{'background': 'url(' + ul + ') no-repeat 0 0 / cover'}"  id="description">
+      <div class="col-sm-8" id="universitytag">
+        <h3 class="display-4 font-weight-bold white-text pt-5 mb-2">{{universityDetails.Name}}</h3>
+        <hr class="hr-light">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-8 col-md-12">
+      <div class="row" id="row">
+        <div class="rounded-sm" id="tag">
+          <small class="text-muted">
+            <div id="space"> <i class="fas fa-coins" id="coins"></i>
+              <p id="para">
+                <b id="rate">${{universityDetails.tuition_fee}}/yr</b>
+                Tuition Fee
+              </p>
+            </div>
+          </small>
+        </div>
+
+        <div class="rounded-lg" id="tag">
+          <small class="text-muted">
+            <div class="r" id="space"><i class="fas fa-vote-yea" id="coins"></i>
+              <p id="para">
+                <b id="rate"> {{universityDetails.acceptance_rate}}%</b>
+                Acceptance Rate
+              </p>
+            </div>
+          </small>
+        </div>
+        <div class="rounded-lg" id="tag">
+          <small class="text-muted">
+            <div class="e" id="space"><i class="fas fa-hand-holding-usd" id="coin"></i>
+              <p id="para">
+                <b id="rates">${{universityDetails.averageLiving}}/yr</b>
+                Average Living
+              </p>
+            </div>
+          </small>
+        </div>
+      </div>
+      <div class="row">
+        <div id="uni">
+          <p class="h1">
+            <img src="{{universityDetails.ImagePath}}" id="ig" />
+            <small>{{universityDetails.Name}}</small><br>
+            <small class="text-muted" id="l"><i class="fas fa-chart-line"></i> University rank
+              #{{universityDetails.Ranking}}</small>
+            <small class="text-muted" id="l"><i class="fas fa-map-marker-alt"></i>
+              {{universityDetails.Location}}</small>
+            <br>
+          </p>
+          <br>
+          <div class="col-sm-9" id="j">
+            <small class="text-muted" id="k">{{universityDetails.description}} </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <agm-map [latitude]="lat" [longitude]="long">
+        <agm-marker [latitude]="lat" [longitude]="long"></agm-marker>
+      </agm-map>
+      <div id="d">
+        <a href="{{universityDetails.site}}" target="_blank">Find more information on the university website</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profilee" role="tab" aria-controls="profile"
+          aria-selected="true">Overview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="home-tab" data-toggle="tab" href="#homeee" role="tab" aria-controls="home"
+          aria-selected="fasle">Admission requirements</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+          aria-selected="false">Work Permit</a>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="col-lg-8 col-md-12" id="g">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade" id="homeee" role="tabpanel" aria-labelledby="home-tab">
+            <h3><small>English Language Requirements</small></h3>
+            <h5><small>You only need to take one of these language tests:</small></h5>
+            <br>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="tl">
+              <label class="btn btn-secondary active" id="button" (click)="toggle(0)">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> TOEFL iBT<sup> <i
+                    class="fas fa-registered" id="reg"></i></sup>
+              </label>
+              <label class="btn btn-secondary" id="button" (click)="toggle(1)">
+                <input type="radio" name="options" id="option2" autocomplete="off"> IELTS
+              </label>
+            </div>
+            <br>
+            <div id="n">
+              Minimum required score:
+            </div>
+            <div class="col-md-12" id="toefl">
+              <br>
+              <div class="col-lg-4">
+                <div class="progress">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width:80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100"></div>90
+                </div>
+                <div class="start">0</div>
+                <div class="end">120</div>
+                <br>
+                <br>
+              </div>
+              <div class="col sm-6">
+                <p>The TOEFL iBT ® measures your English-language abilities in an academic setting.
+                  The test has four sections (reading, listening, speaking, and writing), each with a score range of
+                  0-30,
+                  for a total score range of 0-120. Read more about TOEFL iBT ®.</p>
+                <br>
+                <a id="hello"
+                  href="https://www.ets.org/bin/getprogram.cgi?test=toefl?utm_campaign=WW&utm_medium=textlink&utm_source=StudyPortals&utm_content=Context"
+                  target="_blank">Schedule TOEFL iBT ®</a>
+                <br>
+                <br>
+              </div>
+            </div>
+            <div class="col-md-12" id="ielts">
+              <br>
+              <div class="col-lg-4">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary" role="progressbar" style="width:80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100"></div>6.5
+                </div>
+                <div class="start">1.0</div>
+                <div class="end">9.0</div>
+                <br>
+                <br>
+              </div>
+              <div class="col sm-6">
+                <p>The IELTS – or the International English Language Test System – tests your English-language abilities
+                  (writing, listening, speaking, and reading) on a scale of 1.00–9.00.
+                  The minimum IELTS score requirement refers to which Overall Band Score you received, which is your
+                  combined average score.</p>
+                <br>
+                <a id="hello"
+                  href="https://takeielts.britishcouncil.org/book-your-test/book-now?utm_source=studyportals.eu"
+                  target="_blank">Schedule IELTS</a>
+                <br>
+                <br>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-md-12">
+              <h3><small>GRE Requirements</small></h3>
+              <br>
+              <div class="col-md-5">
+                <h6 class="col-md-6 bg-secondary" id="y">{{universityDetails.averageGRE}}
+                  <br>Average GRE</h6>
+              </div>
+              <div class="col sm-4">
+                <p>The Graduate Record Examinations is a standardized test that
+                  is an admissions requirement for most graduate schools in the United States. The GRE is owned and
+                  administered by Educational Testing Service.</p>
+                <br>
+                <a id="hello" href="https://www.ets.org/gre/revised_general/register" target="_blank">Schedule GRE</a>
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="profilee" role="tabpanel" aria-labelledby="profile-tab">
+            <p>{{universityDetails.Infrastructure}}</p>
+            <h3><small>Residing:</small></h3>
+            <p>{{universityDetails.Residing}}</p>
+            <h3><small>Weather:</small></h3>
+            <p>{{universityDetails.weather}}</p>
+            <h3><small>Faculty:</small></h3>
+            <p>{{universityDetails.Faculty}}</p>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h3><small>Jobs:</small></h3>
+            <p>{{universityDetails.jobs}}</p>
+            <h3><small>Work Permit for International Students</small></h3>
+            <p>Working On Campus with a Student Visa: No Work Permit Needed for a Foreign Student / International Student</p>
+            <p>Working Off-Campus with a Student Visa: International Student Work Permit Required</p>
+            <p>As an international student / foreign student, finding work off-campus in the USA is not an option at first, but once you have spent a year in the United States you may be eligible to apply for an international student work permit that allows you to work off-campus, in an area related to your field of study.
+
+            </p><p> After you have been studying in the US for a year, go to the International Students Office at your college or university - or to the school’s Registrar’s Office - where they can give you the necessary forms and explain how to apply for the student work permit that will allow you to work off campus. In order to obtain the international student work permit, you will need approval from both your school and the U.S. Citizenship and Immigration Services (USCIS).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div id="g">
+          <h3><small>IELTS</small></h3>
+          <hr>
+          <p>To study at this university, you have to speak English.
+            To test your English language proficiency <a href="">schedule an IELTS test.</a>
+          </p>
+        </div>
+        <div id="g">
+          <h3><small>TOEFL iBT<sup>&reg;</sup></small></h3>
+          <hr>
+          <p>The TOEFL® test is a popular option for students to meet
+            the English-language requirements for this university.<br>
+            <a href="https://www.ets.org/bin/getprogram.cgi?test=toefl?utm_campaign=WW&utm_medium=textlink&utm_source=StudyPortals&utm_content=Context" target="_blank">Schedule a TOEFL® test.</a>
+          </p>
+        </div>
+        <div id="g">
+          <h3><small>GRE<sup>&reg;</sup></small></h3>
+          <hr>
+          <p>The Graduate Record Examinations is a standardized test that
+            is an admissions requirement for most graduate schools in the United States.<br>
+            <a href="">Schedule a GRE® test.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

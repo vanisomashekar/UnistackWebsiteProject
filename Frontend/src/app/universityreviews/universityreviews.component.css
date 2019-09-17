@@ -1,0 +1,73 @@
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto;
+    background-image: url("src\assets\Images\background.jpg");
+ }
+#TopUnniversitiesHeader{
+   
+    background-image: url("src\assets\Images\headerTopUni.jpg"); 
+    height: 30%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+    margin-top:55px;
+       padding: 20px;
+       font-family: Broadway;
+}
+
+.eachUni{
+    
+    padding:10px;
+    border: 1px solid lightslategray;
+    background-color: white;
+    
+
+}
+
+#TopUnniversitiesBody{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:80%;
+    margin:auto;
+}
+
+.images{
+    float:left;
+    margin: 0px 15px 15px 20px;
+}
+
+.details{
+    clear:auto;
+    
+}
+
+.rank{
+    /* text-align: center; */
+    width:50%
+}
+
+.btn{
+background-color: rgb(82, 109, 136);
+border-color: rgb(82, 109, 136);
+font-family: Marker Felt, fantasy;
+
+}
+
+/*  */
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.show-scroll {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}

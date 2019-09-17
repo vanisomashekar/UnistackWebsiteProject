@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar-nav{
+    margin-right: 150px;  
+}
+.ui-widget{
+    margin-top:150px;
+    margin-left:-40px;
+}
+
+#description{
+    
+    background-size: 1380px;
+}
+#universitytag{
+    margin-top:250px;
+    background-color:rgb(147, 161, 185,0.6);
+    background-clip: border-box;
+    color:rgb(254, 255, 255);
+    font-family: Broadway; 
+}
+#usertag{
+    margin-top:150px;
+    background-clip: border-box;
+    color:rgb(254, 255, 255);
+    font-family: Broadway; 
+}
+#tag{
+    background-color:rgb(189, 185, 185,0.2);
+    font-family: Bodoni MT;
+    margin-left:10px;
+}
+#tags{
+    background-color:rgba(16, 87, 109,0.3);
+    color:rgb(46, 40, 40,0.7);
+    font-family: Bodoni MT;
+    margin-left:10px;
+    width:156px;
+}
+.r{
+    margin-right:20px;
+}
+#space{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:25px;
+}
+#uni{
+    margin-left:34px;
+}
+.e{
+    margin-right:-10px;
+}
+#ig{
+    float:left;
+    margin-right:20px;
+    overflow: auto;
+    
+}
+#l{
+    font-size:15px;
+    margin-right: 10px;
+}
+#j{
+    margin-left:130px;
+}
+#k{
+    clear:left;
+    font-size:15px;
+}
+#row{
+    margin-left:10px;
+    margin-bottom:20px;
+}
+#row2{
+    margin-left:30px;
+    margin-bottom:40px; 
+}
+
+#coin{
+    float:left;
+    font-size:38px;
+}
+#coins{
+    float:left;
+    font-size:40px;
+}
+#coi{
+    float:left;
+    font-size:40px;
+}
+#rate{
+    font-size:25px;
+}
+#rates{
+    font-size:20px;
+}
+#fee{
+    font-size:11px;
+}
+.navbar {   
+background-color:rgb(87, 104, 134);
+}
+.navbar-header{
+width:30%;
+font-family: Broadway;
+}
+.card-img-top{
+    background-color:transparent;
+border-radius: 63%;
+height: 10%;
+}
+.Trending_section{
+font-style: bold;
+}
+.card-body{
+align-content:center;
+}
+.card{
+background-color:transparent;
+}
+#bodies{
+    background-color:transparent;
+}
+#university{
+    background:url(assets/Images/Capture.PNG)no-repeat;
+
+}
+#profile{
+    background:url(assets/Images/galshir-connection-illustration.png)no-repeat;
+}
+.dropdown:hover>.dropdown-menu {
+display: block;
+background-color:rgba(36, 66, 122, 0.699);
+
+}
+.dropdown-item{
+color:azure;
+}
+#intro {
+height: 100%;
+}
+#fluid{
+background-color:rgba(36, 66, 122, 0.699);
+color:azure;
+}
+#fluid1{
+background:url(assets/Images/footer.png);
+
+}
+.BgBarA{
+    -ms-transform: skew(20deg,10deg); /* IE 9 */
+    -webkit-transform: skew(20deg,10deg); /* Safari */
+    transform: skew(90deg,10deg);
+    background-color: aquamarine;
+}
+#intro {
+background: url("assets/Images/university.jpeg")no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.mask{
+font-family: Broadway;
+color:azure;  
+margin-bottom: 300px;
+}
+input.ng-invalid.ng-dirty{
+    border-bottom-color: red !important;
+    box-shadow:red !important;
+    
+}
+#unistack{
+margin-top: 150px;
+}

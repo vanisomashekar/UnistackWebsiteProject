@@ -1,0 +1,52 @@
+<div class="row">
+<div class="col-lg-5 col-md-12">
+
+    <form class="p-5 grey-text">
+      <h2 class="mb-5 font-weight-bold text-center">Contact Us</h2>
+      <div class="md-form form-sm"> <i class="fas fa-user prefix"></i><label for="form3">Your name</label>
+        <input type="text" id="form3" class="form-control form-control-sm">
+      </div>
+      <div class="md-form form-sm"> <i class="fas fa-envelope prefix"></i> <label for="form2">Your email</label>
+        <input type="text" id="form2" class="form-control form-control-sm">
+
+      </div>
+      <div class="md-form form-sm"> <i class="fas fa-tag prefix"></i><label for="form34">Subject</label>
+        <input type="text" id="form32" class="form-control form-control-sm">
+
+      </div>
+      <div class="md-form form-sm"> <i class="fas fa-pencil-alt prefix"></i> <label for="form8">Your
+          message</label>
+        <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
+
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-primary">Send <i class="far fa-paper-planeml-1"></i></button>
+      </div>
+    </form>
+  </div>
+<div class="col-lg-7 col-md-12">
+    <form class="p-5 grey-text" [formGroup]="registerForm">
+      <h2 class="mb-5 font-weight-bold text-center">Register</h2>
+      <div class="md-form form-sm"> <i class="fas fa-envelope prefix"></i>
+        <label for="form3" data-error="Invalid Email">Email ID</label>
+        <input type="text" name="emailId" formControlName="email" class="form-control form-control-sm validate" [pattern]="emailPattern"required>
+      </div>
+      <div class="md-form form-sm"><i class="fas fa-lock prefix"></i>
+        <label for="form3">Password</label>
+        <input type="password" name="password" formControlName="password" class="form-control form-control-sm validate" required>
+      </div>
+      <div class="md-form form-sm"><i class="fas fa-lock prefix"></i>
+        <label for="form3">Confirm Password</label>
+        <input type="password" id="form3"  formControlName="cpassword" class="form-control form-control-sm">
+      </div>
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-md" (click)="register()">Register</button>
+      </div>
+      <div class="alert" *ngIf="serverErrorMessages">
+        {{serverErrorMessages}}
+      </div>
+
+    </form>
+
+  </div>
+</div>

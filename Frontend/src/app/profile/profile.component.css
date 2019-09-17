@@ -1,0 +1,13 @@
+#space{
+    margin-right:10px;
+}
+#cols{
+    background-color: rgba(16, 87, 109,0.3);
+    color:rgba(16, 87, 109);
+    font-family:Bodoni MT;
+    margin-left:-60px;
+    flex-direction:column;
+}
+#unis{
+    margin-left:25px;
+}

@@ -1,0 +1,50 @@
+#aboutuspage{
+    margin-top: 50px;
+    background-color:rgb(211, 219, 231);
+    margin-bottom:30px;
+}
+.caption {
+    width:100%;
+    bottom: 150px;
+    position: absolute;
+    margin-left: 70px;
+}
+.caption h1 {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+img{
+    margin-top: 20px;
+}
+#aboutus{
+    padding: 20px 20px 20px 20px;
+}
+
+#profilebuilder{
+    padding: 60px 20px 20px 20px;
+}
+#gradfinder,#testprep,#predepart{
+    padding: 20px 20px 20px 20px;
+}
+#univinfo{
+    padding: 20px 20px 60px 20px;
+}
+hr{
+    border-top: 1px solid rgb(87, 104, 134);
+}
+#wrapper{
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 80%;
+    /* border: 5px solid black; */
+    box-shadow: 10px 10px 5px #888888;
+}
+h5{
+    font-weight: bold;
+    color: rgb(87, 104, 134);
+}
+.fa,.fas{
+    color: rgb(87, 104, 134);
+}

@@ -1,0 +1,121 @@
+<div class="container-fluid" style="background-color: slategray;">
+  <!--Section: University reviews-->
+
+  <section id="TopUnniversitiesHeader" class="text-center">
+    <div class="page-header">
+      <h2>UNIVERSITY REVIEWS</h2>
+    </div>
+  </section>
+
+
+  <section id="TopUnniversitiesBody" class="text-left">
+    <div class="row" class="eachUni">
+      <div class="col-md-12">
+        <div>
+
+          <div class="details">
+            <img src="assets\Images\NEU-logo.png" alt="..." class="img-thumbnail" width="5%" class="images">
+            <h5> NORTHEASTERN UNIVERSITY </h5>
+            <h6>Massachusetts, United States</h6>
+          </div>
+          <button type="button" class="btn btn-info btn-sm" *ngIf="expand" (click)="toggle()"><a
+              routerLink="northeastern-review" style="text-decoration: none; color: white">VIEW</a></button>
+
+          <div *ngIf="!expand">
+            <!-- <router-outlet></router-outlet> -->
+            <app-northeastern-review></app-northeastern-review>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row" class="eachUni">
+      <div class="col-md-12">
+        <div>
+
+          <div class="details">
+            <img src="assets\Images\Harvard-Logo.jpg" alt="..." class="img-thumbnail" width="5%" class="images">
+            <h5>HARVARD UNIVERSITY </h5>
+            <h6>Massachusetts, United States</h6>
+          </div>
+
+        </div>
+
+        <button type="button" class="btn btn-sm" *ngIf="expandHarvard" (click)="toggleHarvard()"><a
+            routerLink="harvardreviews" style="text-decoration: none; color: white">VIEW</a></button>
+
+        <div *ngIf="!expandHarvard">
+          <!-- <router-outlet></router-outlet> -->
+          <app-harvardreviews></app-harvardreviews>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row" class="eachUni">
+      <div class="col-md-12">
+        <div>
+
+          <div class="details">
+            <img src="assets\Images\UCLA.png" alt="..." class="img-thumbnail" width="5%" class="images">
+            <h5>
+              University of California--Los Angeles </h5>
+            <h6>California, United States</h6>
+          </div>
+
+        </div>
+
+        <button type="button" class="btn btn-info btn-sm" *ngIf="expandUCLA" (click)="toggleUCLA()"><a
+            routerLink="ucladreview" style="text-decoration: none; color: white">VIEW</a></button>
+
+        <div *ngIf="!expandUCLA">
+          <!-- <router-outlet></router-outlet> -->
+          <app-uclareview></app-uclareview>
+
+        </div>
+
+      </div>
+    </div>
+    
+
+
+    <div class="row" class="eachUni">
+      <div class="col-md-12">
+          <div>
+              
+                <div class="details">
+                    <img src="assets\Images\calstate.png" alt="..." class="img-thumbnail" width="5%" height="55px" class ="images">
+                  <h5 >
+                      CALIFORNIA STATE UNIVERSITY </h5>
+                  <h6 >California, United States</h6>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn btn-info btn-sm" *ngIf="expandCSU" (click)="toggleCSU()"><a routerLink="csureview" style="text-decoration: none; color: white">VIEW</a></button>
+             
+              <div *ngIf="!expandCSU"> 
+              
+                  <app-csureview></app-csureview>
+
+              </div>
+          
+            </div>
+          </div>
+
+
+                                      <!-- TOP BUTTON -->
+
+        <div class="scroll-to-top" [ngClass]="{'show-scroll': navIsFixed}">
+          <button (click)="scrollToTop()" class="btn btn-dark" style="font-family: Broadway; background-color: rgb(40, 40, 41)">
+              BACK TO TOP
+          </button>
+      </div>
+
+
+  </section>
+
+</div>

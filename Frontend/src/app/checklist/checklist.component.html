@@ -1,0 +1,48 @@
+<div class="container-fluid navbar-focus" style="margin-top:50px;">
+  <div class="col-lg-10" style="margin-left:100px;margin-top:100px;background-color: rgb(215, 223, 250);text-align: center;">
+  <div class="row">
+    <div class="col-sm-12 university-header">
+      <div class="col-sm-8" style="margin-left:150px;margin-top:-30px;">
+        <h6 class="display-4 font-weight-bold white-text pt-5 mb-2" style="font-family:Bodoni MT;"><small>University checklist</small></h6>
+        <hr class="hr-light">
+      </div>
+    </div>
+  </div>
+  <br>
+    <div class="row">
+      <div class="col-lg-8" style="margin-left:180px;">
+      <form [formGroup]="universityForm">
+          <div class="form-group row">
+              <label data-error="wrong" data-success="right" for="defaultForm-email" style="font-family:Bodoni MT;"><i class="fas fa-university"></i>University Name</label>
+              <select formControlName="Universityname" id="defaultForm-email" class="form-control validate">
+                <option *ngFor="let university of universityDetails" value="{{university['Name']}}">{{university['Name']}}</option>
+                </select>
+          </div>
+          <div class="form-group row">
+                <label data-error="wrong" data-success="right" for="defaultForm-email" style="font-family:Bodoni MT;"><i class="far fa-lightbulb"></i>Status</label>
+                <select formControlName="Status"  required class="form-control">
+                  <option value="Applied">Applied</option>
+                  <option value="Interested">Interested</option>
+                  <option value="Reject">Reject</option>
+                  <option value="Waitlisted">Waitlisted</option>
+                </select>
+            </div>
+            <div class="form-group row">
+              <label for="inputBirth"  style="font-family:Bodoni MT;"><i class="fas fa-comments"></i>Comments</label>
+              <textarea formControlName="Comments" class="form-control"row="7" col="7"></textarea>
+            </div>
+            <br>
+            <div class="form-group row">
+              <input type="submit"  class="form-control" value="Submit" style="margin-left:300px;font-family:Bodoni MT;" (click)="onSubmit()">
+            </div>
+            <br>
+      </form>
+      <div class="alert" *ngIf="serverErrorMessages">
+          {{serverErrorMessages}}
+        </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <br>
+</div>
